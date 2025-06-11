@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BeefShopAPI.Controller.props" />
+</Project>

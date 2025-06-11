@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Service\\BeefShopAPI.Service.csproj": {}
+  },
+  "projects": {
+    "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Data\\BeefShopAPI.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Data\\BeefShopAPI.Data.csproj",
+        "projectName": "BeefShopAPI.Data",
+        "projectPath": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Data\\BeefShopAPI.Data.csproj",
+        "packagesPath": "C:\\Users\\carli\\.nuget\\packages\\",
+        "outputPath": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\carli\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Model\\BeefShopAPI.Model.csproj": {
+                "projectPath": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Model\\BeefShopAPI.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Model\\BeefShopAPI.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Model\\BeefShopAPI.Model.csproj",
+        "projectName": "BeefShopAPI.Model",
+        "projectPath": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Model\\BeefShopAPI.Model.csproj",
+        "packagesPath": "C:\\Users\\carli\\.nuget\\packages\\",
+        "outputPath": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\carli\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Service\\BeefShopAPI.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Service\\BeefShopAPI.Service.csproj",
+        "projectName": "BeefShopAPI.Service",
+        "projectPath": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Service\\BeefShopAPI.Service.csproj",
+        "packagesPath": "C:\\Users\\carli\\.nuget\\packages\\",
+        "outputPath": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\carli\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Data\\BeefShopAPI.Data.csproj": {
+                "projectPath": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Data\\BeefShopAPI.Data.csproj"
+              },
+              "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Model\\BeefShopAPI.Model.csproj": {
+                "projectPath": "E:\\Repositórios\\beefshopweb\\backend\\BeefShopAPI.Model\\BeefShopAPI.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

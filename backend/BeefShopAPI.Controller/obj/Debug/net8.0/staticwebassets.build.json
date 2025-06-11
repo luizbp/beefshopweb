@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0j7jEbVN+C2trfXZck7aYoB0vLIcOheWD21M0jnnCnM=",
+  "Source": "BeefShopAPI.Controller",
+  "BasePath": "_content/BeefShopAPI.Controller",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

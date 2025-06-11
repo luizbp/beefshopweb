@@ -1,0 +1,15 @@
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\bin\Debug\net8.0\BeefShopAPI.Data.deps.json
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\bin\Debug\net8.0\BeefShopAPI.Data.dll
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\bin\Debug\net8.0\BeefShopAPI.Data.pdb
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\bin\Debug\net8.0\BeefShopAPI.Model.dll
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\bin\Debug\net8.0\BeefShopAPI.Model.pdb
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\BeefShopAPI.Data.csproj.AssemblyReference.cache
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\BeefShopAPI.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\BeefShopAPI.Data.AssemblyInfoInputs.cache
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\BeefShopAPI.Data.AssemblyInfo.cs
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\BeefShopAPI.Data.csproj.CoreCompileInputs.cache
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\BeefShop.FD0F0BFF.Up2Date
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\BeefShopAPI.Data.dll
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\refint\BeefShopAPI.Data.dll
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\BeefShopAPI.Data.pdb
+E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Data\obj\Debug\net8.0\ref\BeefShopAPI.Data.dll
