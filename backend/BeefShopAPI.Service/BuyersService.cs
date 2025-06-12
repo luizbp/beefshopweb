@@ -23,12 +23,12 @@ public class BuyersService : IBuyersService
     return await _buyersRepository.DeleteAsync(id);
   }
 
-  public async Task<List<Buyers>> getAllAsync()
+  public async Task<List<Buyers>> GetAllAsync()
   {
     return await _buyersRepository.GetAllAsync();
   }
 
-  public async Task<Buyers> getByIdAsync(int id)
+  public async Task<Buyers> GetByIdAsync(int id)
   {
     return await _buyersRepository.GetByIdAsync(id);
   }

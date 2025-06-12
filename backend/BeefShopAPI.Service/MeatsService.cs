@@ -23,12 +23,12 @@ public class MeatService : IMeatService
     return await _meatRepository.DeleteAsync(id);
   }
 
-  public async Task<List<Meats>> getAllAsync()
+  public async Task<List<Meats>> GetAllAsync()
   {
     return await _meatRepository.GetAllAsync();
   }
 
-  public async Task<Meats> getByIdAsync(int id)
+  public async Task<Meats> GetByIdAsync(int id)
   {
     return await _meatRepository.GetByIdAsync(id);
   }

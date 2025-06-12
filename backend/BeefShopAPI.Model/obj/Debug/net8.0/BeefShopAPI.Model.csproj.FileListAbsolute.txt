@@ -9,3 +9,14 @@ E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Model\obj\Debug\net8.0\BeefS
 E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Model\obj\Debug\net8.0\refint\BeefShopAPI.Model.dll
 E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Model\obj\Debug\net8.0\BeefShopAPI.Model.pdb
 E:\Repositórios\beefShopApi\backendTwo\BeefShopAPI.Model\obj\Debug\net8.0\ref\BeefShopAPI.Model.dll
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\bin\Debug\net8.0\BeefShopAPI.Model.deps.json
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\bin\Debug\net8.0\BeefShopAPI.Model.dll
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\bin\Debug\net8.0\BeefShopAPI.Model.pdb
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\obj\Debug\net8.0\BeefShopAPI.Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\obj\Debug\net8.0\BeefShopAPI.Model.AssemblyInfoInputs.cache
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\obj\Debug\net8.0\BeefShopAPI.Model.AssemblyInfo.cs
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\obj\Debug\net8.0\BeefShopAPI.Model.csproj.CoreCompileInputs.cache
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\obj\Debug\net8.0\BeefShopAPI.Model.dll
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\obj\Debug\net8.0\refint\BeefShopAPI.Model.dll
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\obj\Debug\net8.0\BeefShopAPI.Model.pdb
+E:\Repositórios\beefshopweb\backend\BeefShopAPI.Model\obj\Debug\net8.0\ref\BeefShopAPI.Model.dll
