@@ -53,7 +53,7 @@ public class OrdersService : IOrdersService
       OrderDate = orderItem.OrderDate,
       TotalValue = orderItem.TotalValue,
       BuyerId = orderItem.Buyers.Id,
-      Buyer = new BuyersDto
+      Buyer = new ResponseBuyersDto
       {
         Id = orderItem.Buyers.Id,
         Name = orderItem.Buyers.Name,
@@ -88,10 +88,13 @@ public class OrdersService : IOrdersService
       OrderDate = order.OrderDate,
       TotalValue = order.TotalValue,
       BuyerId = order.Buyers.Id,
-      Buyer = new BuyersDto
+      Buyer = new ResponseBuyersDto
       {
         Id = order.Buyers.Id,
-        Name = order.Buyers.Name // Supondo que exista uma propriedade Name
+        Name = order.Buyers.Name,
+        Document = order.Buyers.Document,
+        City = order.Buyers.City,
+        State = order.Buyers.State
       },
       OrderItems = order.OrderItems.Select(item => new OrderItemDto
       {

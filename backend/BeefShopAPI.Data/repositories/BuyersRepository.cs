@@ -41,12 +41,16 @@ public class BuyersRepository : IBuyersRepository
 
   public async Task<List<Buyers>> GetAllAsync()
   {
-    return await _context.Buyers.ToListAsync();
+    return await _context.Buyers
+    .Include(meat => meat.Orders)
+    .ToListAsync();
   }
 
   public async Task<Buyers> GetByIdAsync(int id)
   {
-    return await _context.Buyers.FirstOrDefaultAsync(c => c.Id == id);
+    return await _context.Buyers
+    .Include(meat => meat.Orders)
+    .FirstOrDefaultAsync(c => c.Id == id);
   }
 
   public async Task<Buyers> UpdateAsync(int id, Buyers buyers)

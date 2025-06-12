@@ -24,9 +24,10 @@ import {
   updateBuyers,
 } from "../../services/beefShopApi/buyerServices";
 import { CITIES, STATES } from "../../utils/constants";
+import { useGlobalContext } from "../../contexts/globalContext";
 
 export function BuyersManagement() {
-  const [buyers, setBuyers] = useState<Buyers[]>([]);
+  const { buyers, setBuyers } = useGlobalContext();
   const [
     addEditModalOpened,
     { open: openAddEditModal, close: closeAddEditModal },
@@ -166,10 +167,21 @@ export function BuyersManagement() {
               <IconPencil size="1rem" />
             </ActionIcon>
           </Tooltip>
-          <Tooltip label={"Delete Buyers"} multiline w={180}>
+          <Tooltip
+            label={
+              (buyer?.numberAssociatedOrders || 0) > 0
+                ? `Cannot delete, has ${
+                    buyer?.numberAssociatedOrders || 0
+                  } associated orders`
+                : "Delete Buyer"
+            }
+            multiline
+            w={180}
+          >
             <div>
               <ActionIcon
                 color="red"
+                disabled={(buyer?.numberAssociatedOrders || 0) > 0}
                 onClick={() => openDeleteConfirmation(buyer)}
               >
                 <IconTrash size="1rem" />

@@ -13,4 +13,20 @@ export interface Buyers {
   document: string;
   city: string;
   state: string;
+  numberAssociatedOrders?: number;
+}
+
+export interface OrderItems {
+  meatId: number;
+  price: number;
+  coin: string;
+}
+
+export interface Orders {
+  id?: number;
+  orderDate: Date;
+  totalValue?: number;
+  buyerId: number;
+  buyer?: Buyers | null,
+  orderItems: OrderItems[]
 }
