@@ -20,6 +20,7 @@ export interface OrderItems {
   meatId: number;
   price: number;
   coin: string;
+  meat?: Meat
 }
 
 export interface Orders {

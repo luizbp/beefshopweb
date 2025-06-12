@@ -41,12 +41,16 @@ public class OrderItemsRepository : IOrderItemsRepository
 
   public async Task<List<OrderItems>> GetAllAsync()
   {
-    return await _context.OrderItems.ToListAsync();
+    return await _context.OrderItems
+    .Include(orderItem => orderItem.Meats)
+    .ToListAsync();
   }
 
   public async Task<OrderItems> GetByIdAsync(int orderId, int meatId)
   {
-    return await _context.OrderItems.FirstOrDefaultAsync(c => c.MeatId == meatId && c.OrderId == orderId);
+    return await _context.OrderItems
+    .Include(orderItem => orderItem.Meats)
+    .FirstOrDefaultAsync(c => c.MeatId == meatId && c.OrderId == orderId);
   }
 
   public async Task<OrderItems> UpdateAsync(int orderId, int meatId, OrderItems orderItem)

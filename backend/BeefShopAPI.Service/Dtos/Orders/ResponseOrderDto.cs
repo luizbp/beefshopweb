@@ -7,5 +7,6 @@ public class ResponseOrderDto
     public required DateTime OrderDate { get; set; }
     public required int BuyerId { get; set; }
     public ResponseBuyersDto Buyer { get; set; } = null!;
-    public required ICollection<OrderItemDto> OrderItems { get; set; }
+    public required ICollection<ResponseOrderItemDto> OrderItems { get; set; }
+    public ResponseMeatsDto Meat { get; set; } = null!;
 }

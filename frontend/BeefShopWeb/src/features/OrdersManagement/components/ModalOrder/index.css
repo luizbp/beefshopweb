@@ -1,0 +1,27 @@
+.boxMeats {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxMeats--context {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.boxMeats--select {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.boxBuyer--select {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+select {
+  padding: 5.5px;
+  border-color: #ced4da;
+}

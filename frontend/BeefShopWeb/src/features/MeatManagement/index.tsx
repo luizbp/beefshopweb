@@ -75,7 +75,6 @@ export function MeatManagement() {
     try {
       if (values.id) {
         const meat = values as Meat;
-        console.log("TCL: handleSubmit -> values", values);
         const meatId = Number(meat.id);
         delete meat.id;
         await updateMeat(meatId, meat);

@@ -61,11 +61,17 @@ public class OrdersService : IOrdersService
         City = orderItem.Buyers.City,
         State = orderItem.Buyers.State
       },
-      OrderItems = orderItem.OrderItems.Select(item => new OrderItemDto
+      OrderItems = orderItem.OrderItems.Select(item => new ResponseOrderItemDto
       {
         MeatId = item.MeatId,
         Price = item.Price,
-        Coin = item.Coin
+        Coin = item.Coin,
+        Meat = item.Meats == null ? null : new ResponseMeatsDto
+        {
+            Id = item.Meats.Id,
+            Description = item.Meats.Description,
+            MeatType = item.Meats.MeatType,
+        }
       }).ToList()
     }).ToList();
 
@@ -96,11 +102,17 @@ public class OrdersService : IOrdersService
         City = order.Buyers.City,
         State = order.Buyers.State
       },
-      OrderItems = order.OrderItems.Select(item => new OrderItemDto
+      OrderItems = order.OrderItems.Select(item => new ResponseOrderItemDto
       {
         MeatId = item.MeatId,
         Price = item.Price,
-        Coin = item.Coin
+        Coin = item.Coin,
+        Meat =  new ResponseMeatsDto
+        {
+          Id = item.Meats.Id,
+          Description = item.Meats.Description,
+          MeatType = item.Meats.MeatType,
+        }
       }).ToList()
     };
 

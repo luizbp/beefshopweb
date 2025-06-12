@@ -26,13 +26,17 @@ public class OrdersRepository : IOrdersRepository
   public async Task<bool> DeleteAsync(int id)
   {
 
-    var order = await _context.Orders.FindAsync(id);
-    if (order == null)
+    var orderToDelete = await _context.Orders
+    .Include(o => o.OrderItems)
+    .FirstOrDefaultAsync(o => o.Id == id);
+
+    if (orderToDelete == null)
     {
       return false;
     }
 
-    _context.Orders.Remove(order);
+    _context.OrderItems.RemoveRange(orderToDelete.OrderItems);
+    _context.Orders.Remove(orderToDelete);  
 
     await _context.SaveChangesAsync();
 
@@ -52,6 +56,7 @@ public class OrdersRepository : IOrdersRepository
     return await _context.Orders
     .Include(order => order.Buyers)
     .Include(order => order.OrderItems)
+      .ThenInclude(orderItem => orderItem.Meats)
     .FirstOrDefaultAsync(c => c.Id == id);
   }
 
