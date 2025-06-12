@@ -18,8 +18,7 @@ import { notifications } from '@mantine/notifications';
 import { IconPlus, IconPencil, IconTrash } from '@tabler/icons-react';
 import type { Meat, MeatType } from '../../types';
 import { createMeat, deleteMeat, getAllMeats, updateMeat } from '../../services/beefShopApi/meatServices';
-
-const MEAT_TYPE = ['Bovina', 'Suína', 'Aves', 'Peixes'] as const;
+import { MEAT_TYPE } from '../../utils/constants';
 
 export function MeatManagement() {
   const [meats, setMeats] = useState<Meat[]>([]);

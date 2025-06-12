@@ -6,3 +6,11 @@ export interface Meat {
   meatType: MeatType;
   numberAssociatedOrders?: number;
 }
+
+export interface Buyers {
+  id?: number;
+  name: string;
+  document: string;
+  city: string;
+  state: string;
+}

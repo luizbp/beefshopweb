@@ -7,6 +7,7 @@ import { Container, MantineProvider, Paper, Tabs } from '@mantine/core'
 import { Notifications } from '@mantine/notifications'
 import { MeatManagement } from './features/MeatManagement'
 import { IconMeat, IconTruck, IconUsers } from '@tabler/icons-react';
+import { BuyersManagement } from './features/BuyersManagement';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -32,7 +33,7 @@ createRoot(document.getElementById('root')!).render(
             </Tabs.Panel>
 
             <Tabs.Panel value="buyers">
-              Messages tab content
+              <BuyersManagement />
             </Tabs.Panel>
 
             <Tabs.Panel value="orders">
