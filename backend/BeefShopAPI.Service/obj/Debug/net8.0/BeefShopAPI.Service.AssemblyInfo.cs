@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BeefShopAPI.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2b16aae788480aafa474cc20819e43169215d5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e943fbaaa02074d88f91221189437a4dbc00196")]
 [assembly: System.Reflection.AssemblyProductAttribute("BeefShopAPI.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BeefShopAPI.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

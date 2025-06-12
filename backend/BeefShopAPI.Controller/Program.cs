@@ -21,13 +21,13 @@ builder.Services.AddScoped<IBuyersRepository, BuyersRepository>();
 builder.Services.AddScoped<IOrdersService, OrdersService>();
 builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 
-// builder.Services.AddCors(options =>
-// {
-//   options.AddPolicy("AllowReactApp", policy =>
-//   {
-//     policy.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
-//   });
-// });
+builder.Services.AddCors(options =>
+{
+  options.AddPolicy("AllowReactApp", policy =>
+  {
+    policy.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod();
+  });
+});
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -43,7 +43,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// app.UseCors("AllowReactApp");
+app.UseCors("AllowReactApp");
 
 app.UseAuthorization();
 app.MapControllers();

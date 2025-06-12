@@ -1,5 +1,6 @@
 ﻿using BeefShopAPI.Data.Repositories.Interfaces;
 using BeefShopAPI.Model.Entities;
+using BeefShopAPI.Service.Dtos;
 using BeefShopAPI.Service.Interfaces;
 
 namespace BeefShopAPI.Service;
@@ -23,14 +24,32 @@ public class MeatService : IMeatService
     return await _meatRepository.DeleteAsync(id);
   }
 
-  public async Task<List<Meats>> GetAllAsync()
+  public async Task<List<ResponseMeatsDto>> GetAllAsync()
   {
-    return await _meatRepository.GetAllAsync();
+    var listMeats = await _meatRepository.GetAllAsync();
+    
+    var responseDto = listMeats.Select(meatItem => new ResponseMeatsDto
+    {
+      Id = meatItem.Id,
+      MeatType = meatItem.MeatType,
+      Description = meatItem.Description,
+      NumberAssociatedOrders = meatItem.OrderItems.Count,
+    }).ToList();
+
+    return responseDto;
   }
 
-  public async Task<Meats> GetByIdAsync(int id)
+  public async Task<ResponseMeatsDto> GetByIdAsync(int id)
   {
-    return await _meatRepository.GetByIdAsync(id);
+    var meat = await _meatRepository.GetByIdAsync(id);
+
+    return new ResponseMeatsDto
+    {
+      Id = meat.Id,
+      MeatType = meat.MeatType,
+      Description = meat.Description,
+      NumberAssociatedOrders = meat.OrderItems.Count,
+    };
   }
 
   public async Task<Meats> UpdateAsync(int id, Meats meat)

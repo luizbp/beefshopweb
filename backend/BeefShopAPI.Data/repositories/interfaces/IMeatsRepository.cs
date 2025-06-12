@@ -1,5 +1,4 @@
 using BeefShopAPI.Model.Entities;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace BeefShopAPI.Data.Repositories.Interfaces;
 

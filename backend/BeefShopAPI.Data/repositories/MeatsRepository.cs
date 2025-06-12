@@ -41,12 +41,16 @@ public class MeatRepository : IMeatRepository
 
   public async Task<List<Meats>> GetAllAsync()
   {
-    return await _context.Meats.ToListAsync();
+    return await _context.Meats
+    .Include(meat => meat.OrderItems)
+    .ToListAsync();
   }
 
   public async Task<Meats> GetByIdAsync(int id)
   {
-    return await _context.Meats.FirstOrDefaultAsync(c => c.Id == id);
+    return await _context.Meats
+    .Include(meat => meat.OrderItems)
+    .FirstOrDefaultAsync(c => c.Id == id);
   }
 
   public async Task<Meats> UpdateAsync(int id, Meats meat)
