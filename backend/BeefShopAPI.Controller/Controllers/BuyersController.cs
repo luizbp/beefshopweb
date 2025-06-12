@@ -18,7 +18,7 @@ public class BuyersController : ControllerBase
   [HttpGet("{id}")]
   public async Task<IActionResult> Get(int id)
   {
-    var buyers = await _buyersService.getByIdAsync(id);
+    var buyers = await _buyersService.GetByIdAsync(id);
     if (buyers == null)
     {
       return NotFound();
@@ -30,28 +30,18 @@ public class BuyersController : ControllerBase
   [HttpGet]
   public async Task<IActionResult> GetAll()
   {
-    var meats = await _buyersService.getAllAsync();
-    if (meats == null)
+    var buyers = await _buyersService.GetAllAsync();
+    if (buyers == null)
     {
       return NotFound();
     }
 
-    return Ok(meats);
+    return Ok(buyers);
   }
 
   [HttpPost]
   public async Task<IActionResult> Create(Buyers buyers)
   {
-
-    if (buyers.name == null ||
-        buyers.document == null ||
-        buyers.city == null ||
-        buyers.state == null
-      )
-    {
-      return BadRequest();
-    }
-
     await _buyersService.CreateAsync(buyers);
 
     return Ok(buyers);
@@ -60,15 +50,6 @@ public class BuyersController : ControllerBase
   [HttpPut("{id}")]
   public async Task<IActionResult> Update(int id, Buyers buyers)
   {
-    if (buyers.name == null ||
-        buyers.document == null ||
-        buyers.city == null ||
-        buyers.state == null
-      )
-    {
-      return BadRequest();
-    }
-
     await _buyersService.UpdateAsync(id, buyers);
 
     return Ok(buyers);

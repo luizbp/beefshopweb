@@ -16,6 +16,10 @@ builder.Services.AddDbContext<BeefShopAPIDbContext>(option => option.UseSqlServe
 
 builder.Services.AddScoped<IMeatService, MeatService>();
 builder.Services.AddScoped<IMeatRepository, MeatRepository>();
+builder.Services.AddScoped<IBuyersService, BuyersService>();
+builder.Services.AddScoped<IBuyersRepository, BuyersRepository>();
+builder.Services.AddScoped<IOrdersService, OrdersService>();
+builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 
 // builder.Services.AddCors(options =>
 // {

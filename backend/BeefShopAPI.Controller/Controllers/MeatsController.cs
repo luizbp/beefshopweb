@@ -18,7 +18,7 @@ public class MeatsController : ControllerBase
   [HttpGet("{id}")]
   public async Task<IActionResult> Get(int id)
   {
-    var meat = await _meatService.getByIdAsync(id);
+    var meat = await _meatService.GetByIdAsync(id);
     if (meat == null)
     {
       return NotFound();
@@ -30,7 +30,7 @@ public class MeatsController : ControllerBase
   [HttpGet]
   public async Task<IActionResult> GetAll()
   {
-    var meats = await _meatService.getAllAsync();
+    var meats = await _meatService.GetAllAsync();
     if (meats == null)
     {
       return NotFound();
